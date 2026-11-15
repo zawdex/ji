@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-100 font-sans text-slate-900 antialiased dark:bg-[#0d0b18] dark:text-violet-50;
+    background-image: radial-gradient(800px 420px at 90% -10%, rgb(124 92 255 / .2), transparent),
+      radial-gradient(600px 360px at -10% 0, rgb(56 189 248 / .16), transparent);
+    background-attachment: fixed;
+  }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+}
